@@ -3,14 +3,3 @@
 
 import Main from './src/main.js'
 
-class Game{
-    constructor(){
-        this.Main = Main;
-        console.log("this is a game")
-
-    }
-}
-
-
-export default new Game()
-
