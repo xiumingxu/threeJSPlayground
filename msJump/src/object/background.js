@@ -1,12 +1,13 @@
 import sceneConf from '../../confs/scene.conf'
 import * as THREE from '../../libs/three'
-class BackGround {
-    constructor() {
-        console.log("background")
+class Background {
+    static getInstance(){
+        if(!this._instance)  
+            this._instance = new Background();
+        return this._instance;
     }
-
-    init() {
-        const geometry = THREE.PlaneGeometry(sceneConf.frustumSize * 2, window.innerHeight / window.innerWidth * sceneConf.frustumSize * 2)
+    constructor() {
+        const geometry = new THREE.PlaneGeometry(sceneConf.frustumSize * 2, window.innerHeight / window.innerWidth * sceneConf.frustumSize * 2)
         const material = new THREE.MeshBasicMaterial({
             color: 0xd7dbe6,
             opacity: 1,
@@ -16,4 +17,4 @@ class BackGround {
     }
 }
 
-export default new BackGround()
+export default Background;

@@ -1,6 +1,6 @@
 
 export default class Page{
-     constructor(){
+     constructor(callback){
      }
      show(){
         console.log("show", this.constructor.name);

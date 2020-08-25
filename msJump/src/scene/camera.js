@@ -3,16 +3,14 @@ import * as THREE from '../../libs/three'
 // import { customAnimation } from '../../libs/animation'
 
 export default class Camera {
-    static _instance;
 
     // TODO need to be done
-    static getIntance(){
-        if(!Camera._instance)
-            return Camera._instance;
-         return Camera._instance = new Camera();
+    static getInstance(){
+        if(!this._instance)
+             this._instance = new Camera();
+        return this._instance;
     }
     constructor() {
-        this.instance = null
         this.init();
     }
 

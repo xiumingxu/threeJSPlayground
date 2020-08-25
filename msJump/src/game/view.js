@@ -16,9 +16,11 @@ export default class GameView {
             gamePage,
             gameoverPage
         }
+        gamePage.init()
     }
 
     showGamePage(){
+
 
     }
 
@@ -29,8 +31,9 @@ export default class GameView {
         }
 
         if(pageName.includes('gameOver'))
-            this.pages.gameoverPage.show();
-        this.pages.gamePage.show();
+            this.gameoverPage.show();
+        else 
+            this.gamePage.show();
     }
 
     restart(){

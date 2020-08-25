@@ -2,10 +2,8 @@
 import Controller from './controller.js'
 
 
-
 class Game {
     constructor(props) {
-        this.init();
     }
     init(){
         const controller = this.controller = new Controller();
