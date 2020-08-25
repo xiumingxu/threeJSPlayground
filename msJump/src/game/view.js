@@ -1,5 +1,5 @@
 import GamePage from '../pages/gamePage.js';
-import GameOverPage from '../pages/gameoverPage.js';
+import GameOverPage from '../pages/gameOverPage.js';
 
 export default class GameView {
 

@@ -1,4 +1,5 @@
 import Page from './page.js'
+import Scene from '../scene/scene'
 
 export default class GamePage extends Page {
     constructor(callbacks) {

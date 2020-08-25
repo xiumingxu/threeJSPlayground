@@ -1,5 +1,6 @@
 import sceneConf from '../../confs/scene-conf'
 import { customAnimation } from '../../libs/animation'
+import * as THREE from '../../libs/three'
 
 class Camera {
   constructor () {
